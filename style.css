@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bord{
+    border: 2px solid black;
+    border-radius: 30px;
+}
+header{
+    background-color: black;
+    display: flex;
+    gap: 389px;
+    height: 55px;
+    color: #C2185B;
+    font-size: 12px;
+    border-radius: 29px;
+}
+.Moi{
+    display: flex;
+    gap: 545px;
+     margin: 10px;
+     background-color: pink;
+}
+.Moi p{
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 9px;
+}
+.RODE{
+    color: palevioletred;
+}
+.Moi img{
+     width: 200px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Infor{
+    display: flex;
+    gap: 110px;
+    padding-left: 20px;
+    margin-top: 25px;
+}
+.propos{
+    border: 2px solid black;
+    border-radius: 28px;
+    color: white;
+    background-color: black;
+    width: 550px;
+  
+   
+}
+.propos h2{
+    color: #C2185B;
+    text-align: center;
+}
+.formation{
+     border: 2px solid black;
+    border-radius: 28px;
+    color: white;
+    background-color: black;
+     width: 550px;
+    text-align: center;
+
+}
+.formation h2{
+    color: #C2185B;
+    text-align: center;
+}
+.illgane{
+    display: flex;
+    gap: 180px;
+     padding: 10px;
+}
+.illgane img{
+    border-radius: 39px;
+    width: 90px;
+    height: 70px;
+     border: 1px solid black;
+}
+h2{
+    text-align: center;
+}
+
+.con{
+    background-color: black;
+    border-radius: 64px;
+    color: whitesmoke;
+    padding: 40px 20px;
+    text-align: center;
+}
+.infor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 67px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 25px;
+}
+.Contact{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 180px;
+
+}
+.Contact p{
+    font-weight: bold;
+}
+.stat-card{
+    width: 230px;
+    min-width: 0;
+    box-sizing: border-box;
+    border: 2px solid #1557a0;
+    border-radius: 5px;
+  text-align: center;
+}
+.stat-icon{
+    font-size: 35px;
+}
+.stat-card p{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.Réale{
+     display:grid;
+         grid-template-columns: repeat(3,1fr);
+    gap: 200px;
+  padding-left: 40px;
+   row-gap: 30px;
+   color: white;
+   background-color: #00008b;
+}
+
+/* RESPONSIVE POUR LES TELEPHONES */
+@media screen and (max-width: 600px) {
+
+    /* Enlever les espaces trop grands du haut */
+    header {
+        gap: 5px;
+        height: auto;
+        min-height: 55px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Présentation de Laurina et sa photo */
+    .Moi {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Moi p {
+        font-size: 17px;
+        padding-left: 0;
+    }
+
+    .Moi img {
+        max-width: 100%;
+    }
+
+    /* À propos de moi et formation */
+    .Infor {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .propos,
+    .formation {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+    .propos p,
+    .formation p {
+        padding: 0 10px;
+    }
+
+    /* Compétences */
+    .illgane {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .illgane img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    /* Réalisations */
+    .Réale {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .stat-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .stat-card p {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Contacts */
+    .con {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .infor {
+        gap: 15px;
+    }
+
+    .Contact {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+}
